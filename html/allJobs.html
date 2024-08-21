@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<div className="light scroll-smooth" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GK | Group of recruiters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Job Listing Landing Template" name="description">
+    <meta content="Job, CV, Career, Resume, Job Portal, Create Job, Post job, tailwind Css, GK group" name="keywords">
+    <meta name="version" content="1.5.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/logo-icon-40.png">
+
+    <!-- Css -->
+    <link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet">
+    <!-- Main Css -->
+    <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+    <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/tailwind.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body className="dark:bg-slate-900">
+   
+    <div id="preloader">
+        <div id="status">
+            <div className="spinner">
+                <div className="double-bounce1"></div>
+                <div className="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+   
+
+    <nav id="topnav" className="defaultscroll is-sticky">
+        <div className="container">
+            
+            <a className="logo" href="index.html">
+                <div className="block sm:hidden">
+                    <img src="assets/images/logo-icon-40.png" className="h-10 inline-block dark:hidden" alt="">
+                    <img src="assets/images/logo-icon-40-white.png" className="h-10 hidden dark:inline-block" alt="">
+                </div>
+                <div className="sm:block hidden">
+                    <img src="assets/images/logo-dark.png" style="height: 60px;"
+                        className="object-cover inline-block dark:hidden" alt="">
+                    <img src="assets/images/logo-light.png" style="height: 60px"
+                        className="object-cover hidden dark:inline-block" alt="">
+                </div>
+            </a>
+           
+           
+            <div className="menu-extras">
+                <div className="menu-item">
+                    <a className="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div className="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+
+            
+            <ul className="buy-button list-none mb-0">
+      
+                <li className="dropdown inline-block relative ps-1 "  >
+                    <a href="authentication.html"
+                            className="btn rounded-md bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white md:ms-2 w-full md:w-auto">Login/Register</a>
+                    <button data-dropdown-toggle="dropdown" hidden className="dropdown-toggle items-center" type="button">
+                        <span
+                            className="btn btn-icon rounded-full bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white"><img
+                                src="assets/images/team/01.jpg" className="rounded-full" alt=""></span>
+                    </button>
+                   
+                    <div className="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-44 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 hidden"
+                        onclick="event.stopPropagation();">
+                        <ul className="py-2 text-start">
+                            <li>
+                                <a href="candidate-profile.html"
+                                    className="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-emerald-600 dark:hover:text-white"><i
+                                        data-feather="user" className="size-4 me-2"></i>Profile</a>
+                            </li>
+                            <li>
+                                <a href="candidate-profile-setting.html"
+                                    className="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-emerald-600 dark:hover:text-white"><i
+                                        data-feather="settings" className="size-4 me-2"></i>Settings</a>
+                            </li>
+                            <li className="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                            <li>
+                                <a href="login.html"
+                                    className="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-emerald-600 dark:hover:text-white"><i
+                                        data-feather="log-out" className="size-4 me-2"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+           
+
+            <div id="navigation">
+                
+                <ul className="navigation-menu justify-end nav-light">
+                    <li className="parent-menu-item">
+                        <a href="index.html">Home</a><span className=""></span>
+                    </li>
+
+                    <li className="has-submenu parent-parent-menu-item"><a href="javascript:void(0)"> Jobs </a><span
+                            className="menu-arrow"></span>
+                        <ul className="submenu">
+                            <li><a href="job-categories.html" className="sub-menu-item">Job Categories</a></li>
+                            <li><a href="allJobs.html" className="sub-menu-item">All Jobs</a></li>
+                        </ul>
+                    </li>
+
+                    <li className="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Pages</a><span className="menu-arrow"></span>
+                        <ul className="submenu">
+                            <li><a href="aboutus.html" className="sub-menu-item">About Us</a></li>
+                            <li><a href="services.html" className="sub-menu-item">Services</a></li>
+                            <li><a href="career.html" className="sub-menu-item">Career </a></li>
+                          
+
+
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html" className="sub-menu-item">Contact</a></li>
+                </ul>
+            </div>
+        </div><!--end container-->
+    </nav><!--end header-->
+    <!-- End Navbar -->
+
+        <!-- Start Hero -->
+        <section className="relative table w-full py-36 bg-[url('../../assets/images/hero/bg.html')] bg-top bg-no-repeat bg-cover">
+            <div className="absolute inset-0 bg-emerald-900/90"></div>
+            <div className="container">
+                <div className="grid grid-cols-1 text-center mt-10">
+                    <h3 className="md:text-3xl text-2xl md:leading-snug tracking-wide leading-snug font-medium text-white">Job Vacancies</h3>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <div className="relative">
+            <div className="shape absolute start-0 end-0 sm:-bottom-px -bottom-[2px] overflow-hidden z-1 text-white dark:text-slate-900">
+                <svg className="w-full h-auto" viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- End Hero -->
+
+        <!-- Start -->
+        <section className="relative -mt-[42px] md:pb-24 pb-16">
+            <div className="container z-1">
+                <div className="d-flex" id="reserve-form">
+                    <div className="md:w-5/6 mx-auto">
+                        <div className="lg:col-span-10">
+                            <div className="bg-white dark:bg-slate-900 border-0 shadow rounded-md p-3">
+                                <form action="#">
+                                    <div className="registration-form text-dark text-start">
+                                        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-6">
+                                            <div className="filter-search-form relative filter-border">
+                                                <i className="uil uil-briefcase-alt icons"></i>
+                                                <input name="name" type="text" id="job-keyword" className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search your Keywords">
+                                            </div>
+
+                                            <div className="filter-search-form relative filter-border">
+                                                <i className="uil uil-map-marker icons"></i>
+                                                <select className="form-select" data-trigger name="choices-location" id="choices-location" aria-label="Default select example">
+                                                    <option value="IND">INDIA</option>
+                                                    <option value="AF">UAE</option>
+                                                    <option value="UAE">OMAN</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <div className="filter-search-form relative filter-border">
+                                                <i className="uil uil-briefcase-alt icons"></i>
+                                                <select className="form-select" data-trigger name="choices-type" id="choices-type" aria-label="Default select example">
+                                                    <option selected="" value="1">Full Time</option>
+                                                    <option value="2">Part Time</option>
+                                                    <option value="3">Freelancer</option>
+                                                    <option value="4">Remote Work</option>
+                                                    <option value="5">Office Work</option>
+                                                </select>
+                                            </div>
+
+                                            <input type="submit" id="search" name="search" style="height: 60px;" className="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white searchbtn submit-btn w-100" value="Search">
+                                        </div><!--end grid-->
+                                    </div><!--end container-->
+                                </form>
+                            </div>
+                        </div><!--ed col-->
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div className="container mt-10">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-[30px]">
+                   
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/google-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Google</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Part Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Marketing Director</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> USA</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/android.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Android</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Application Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> China</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/lenovo-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Lenovo</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">WFH</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Senior Product Designer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Dubai</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/spotify.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Spotify</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">C++ Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> India</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/linkedin.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Linkedin</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Php Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Pakistan</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/circle-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Circle CI</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Web Designer / Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Australia</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/skype.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Skype</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Part Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Marketing Director</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> USA</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/snapchat.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Snapchat</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Application Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> China</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/telegram.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Telegram</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">C++ Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> India</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/whatsapp.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Whatsapp</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Php Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Pakistan</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/google-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Google</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Part Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Marketing Director</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> USA</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/android.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Android</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Application Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> China</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/lenovo-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Lenovo</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">WFH</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Senior Product Designer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Dubai</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/spotify.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Spotify</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">C++ Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> India</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/linkedin.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Linkedin</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Php Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Pakistan</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/circle-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Circle CI</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Web Designer / Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Australia</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/skype.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Skype</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Part Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Marketing Director</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> USA</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/snapchat.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Snapchat</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Application Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> China</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/telegram.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Telegram</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">C++ Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> India</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/whatsapp.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Whatsapp</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Php Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Pakistan</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/google-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Google</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Part Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Marketing Director</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> USA</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/android.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Android</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Application Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> China</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/lenovo-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Lenovo</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">WFH</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Senior Product Designer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Dubai</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/spotify.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Spotify</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">C++ Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> India</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/linkedin.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Linkedin</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Php Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Pakistan</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/circle-logo.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Circle CI</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Web Designer / Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Australia</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/skype.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Skype</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Part Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Marketing Director</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> USA</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/snapchat.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Snapchat</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Application Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> China</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/telegram.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Telegram</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Full Time</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">C++ Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> India</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+
+                    <div className="group shadow dark:shadow-gray-700 p-6 rounded-md bg-white dark:bg-slate-900">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="size-14 flex items-center justify-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+                                    <img src="assets/images/company/whatsapp.png" className="size-8"  alt="">
+                                </div>
+
+                                <div className="ms-3">
+                                    <a href="job-detail.html" className="block text-[16px] font-semibold hover:text-emerald-600 transition-all duration-500">Whatsapp</a>
+                                    <span className="block text-sm text-slate-400">2 days ago</span>
+                                </div>
+                            </div>
+
+                            <span className="bg-emerald-600/10 group-hover:bg-emerald-600 inline-block text-emerald-600 group-hover:text-white text-xs px-2.5 py-0.5 font-semibold rounded-full transition-all duration-500">Remote</span>
+                        </div>
+
+                        <div className="mt-6">
+                            <a href="job-detail.html" className="text-lg hover:text-emerald-600 font-semibold transition-all duration-500">Php Developer</a>
+                            <h6 className="text-base font-medium"><i className="uil uil-map-marker"></i> Pakistan</h6>
+                        </div>
+
+                        <div className="mt-6">
+                            <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-[6px]">
+                                <div className="bg-emerald-600 h-[6px] rounded-full" style="width: 55%"></div>
+                            </div>
+                            <div className="mt-2">
+                                <span className="text-slate-400 text-sm"><span className="text-slate-900 dark:text-white font-semibold inline-block">21 applied</span> of 40 vacancy</span>
+                            </div>
+                        </div>
+                    </div><!--end content-->
+                </div><!--end grid-->
+
+                <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
+                    <div className="md:col-span-12 text-center">
+                        <nav aria-label="Page navigation example">
+                            <ul className="inline-flex items-center -space-x-px">
+                                <li>
+                                    <a href="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-s-3xl hover:text-white border border-gray-100 dark:border-gray-800 hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600">
+                                        <i className="uil uil-angle-left text-[20px] rtl:rotate-180 rtl:-mt-1"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-current="page" className="z-10 size-[40px] inline-flex justify-center items-center text-white bg-emerald-600 border border-emerald-600">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600">4</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 hover:text-white bg-white dark:bg-slate-900 border border-gray-100 dark:border-gray-800 hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600">5</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="size-[40px] inline-flex justify-center items-center text-slate-400 bg-white dark:bg-slate-900 rounded-e-3xl hover:text-white border border-gray-100 dark:border-gray-800 hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600">
+                                        <i className="uil uil-angle-right text-[20px] rtl:rotate-180 rtl:-mt-1"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!--end col-->
+                </div><!--end grid-->
+            </div><!--end container-->
+
+            <div className="container-fluid md:mt-24 mt-16">
+                <div className="container">
+                    <div className="grid grid-cols-1">
+                        <div className="relative overflow-hidden lg:px-8 px-6 py-10 rounded-xl shadow-lg dark:shadow-gray-700">
+                            <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                                <div className="lg:col-span-8 md:col-span-7">
+                                    <div className="md:text-start text-center relative z-1">
+                                        <h3 className="text-2xl font-semibold text-black dark:text-white mb-4">Explore a job now!</h3>
+                                        <p className="text-slate-400 max-w-xl">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
+                                    </div>
+                                </div><!--end col-->
+            
+                                <div className="lg:col-span-4 md:col-span-5">
+                                    <div className="text-end relative z-1">
+                                        <a href="#" className="btn bg-emerald-600 hover:bg-emerald-700 border-emerald-600 dark:border-emerald-600 text-white rounded-md">Apply Now</a>
+                                        <a href="aboutus.html" className="btn bg-emerald-600/5 hover:bg-emerald-600 border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white rounded-md ms-2">Learn More</a>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end grid-->
+            
+                            <div className="absolute -top-5 -start-5">
+                                <div className="uil uil-envelope lg:text-[150px] text-7xl text-black/5 dark:text-white/5 ltr:-rotate-45 rtl:rotate-45"></div>
+                            </div>
+            
+                            <div className="absolute -bottom-5 -end-5">
+                                <div className="uil uil-pen lg:text-[150px] text-7xl text-black/5 dark:text-white/5 rtl:-rotate-90"></div>
+                            </div>
+                        </div>
+                    </div><!--end grid-->
+                </div><!--end container-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+    <!-- Start Footer -->
+    <footer className="relative bg-slate-900 dark:bg-slate-800">
+        <div className="container">
+            <div className="grid grid-cols-1">
+                <div className="relative py-12">
+                    <!-- Subscribe -->
+                    <div className="relative w-full">
+                        <div className="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                            <div className="md:col-span-3">
+                                <a href="#" className="flex justify-center md:justify-start focus:outline-none">
+                                    <img src="assets/images/logo-light.png" className="" alt="">
+                                </a>
+                            </div><!--end col-->
+
+                            <div className="md:col-span-9">
+                                <ul className="list-disc footer-list md:text-end text-center space-x-3">
+                                    <li className="inline-block"><a href="index.html"
+                                            className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">Home</a>
+                                    </li>
+                                    <li className="inline-block mt-[10px] md:mt-0"><a href="aboutus.html"
+                                            className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">How
+                                            it works</a></li>
+                                            <li className="inline-block mt-[10px] md:mt-0"><a href="companyRegister.html"
+                                                className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">Register
+                                                company</a></li>
+                                    <li className="inline-block mt-[10px] md:mt-0"><a href="aboutus.html"
+                                            className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">About
+                                            us</a></li>
+                                            <li className="inline-block mt-[10px] md:mt-0"><a href="contact.html"
+                                                className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">Careers
+                                                    </a></li>
+                                    <li className="inline-block mt-[10px] md:mt-0"><a href="contact.html"
+                                            className="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">Contact
+                                            us</a></li>
+                                </ul><!--end icon-->
+                            </div><!--end col-->
+                        </div><!--end grid-->
+                    </div>
+                    <!-- Subscribe -->
+                </div>
+            </div>
+        </div><!--end container-->
+
+        <div className="py-[30px] px-0 border-t border-gray-800 dark:border-gray-700">
+            <div className="container text-center">
+                <div className="grid md:grid-cols-2 items-center gap-6">
+                    <div className="md:text-start text-center">
+                        <p className="mb-0 text-gray-300 font-medium">©
+                           2024 GK Recruiters. Design with <i
+                                className="mdi mdi-heart text-red-600"></i> by <a href="https://revlient.com/"
+                                target="_blank" className="text-reset">Revlient</a>.
+                        </p>
+                    </div>
+
+                    <ul className="list-none md:text-end text-center space-x-0.5">
+                
+                        <li className="inline"><a href="" target="_blank"
+                                className="btn btn-icon btn-sm border-2 border-gray-800 dark:border-gray-700 rounded-md hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white"><i
+                                    className="uil uil-linkedin" title="Linkedin"></i></a></li>
+                        <li className="inline"><a href="" target="_blank"
+                                className="btn btn-icon btn-sm border-2 border-gray-800 dark:border-gray-700 rounded-md hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white"><i
+                                    className="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+                        <li className="inline"><a href="" target="_blank"
+                                className="btn btn-icon btn-sm border-2 border-gray-800 dark:border-gray-700 rounded-md hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white"><i
+                                    className="uil uil-instagram align-middle" title="instagram"></i></a></li>
+                        <li className="inline"><a href="" target="_blank"
+                                className="btn btn-icon btn-sm border-2 border-gray-800 dark:border-gray-700 rounded-md hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white"><i
+                                    className="uil uil-twitter align-middle" title="twitter"></i></a></li>
+                        <li className="inline"><a href="mailto:support@company.in"
+                                className="btn btn-icon btn-sm border-2 border-gray-800 dark:border-gray-700 rounded-md hover:border-emerald-600 dark:hover:border-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white"><i
+                                    className="uil uil-envelope align-middle" title="email"></i></a></li>
+                    </ul><!--end icon-->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </div>
+    </footer><!--end footer-->
+    <!-- End Footer -->
+    <!-- Switcher -->
+    <div className="fixed top-1/4 -left-2 z-50">
+        <span className="relative inline-block rotate-90">
+            <input type="checkbox" className="checkbox opacity-0 absolute" id="chk">
+            <label
+                className="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8"
+                for="chk">
+                <i className="uil uil-moon text-[20px] text-yellow-500"></i>
+                <i className="uil uil-sun text-[20px] text-yellow-500"></i>
+                <span className="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] size-7"></span>
+            </label>
+        </span>
+    </div>
+
+
+    <!-- Switcher -->
+
+    <!-- LTR & RTL Mode Code -->
+    <!-- <div className="fixed top-[40%] -left-3 z-50">
+        <a href="#" id="switchRtl">
+            <span
+                className="py-1 px-3 relative inline-block rounded-b-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold rtl:block ltr:hidden">LTR</span>
+            <span
+                className="py-1 px-3 relative inline-block rounded-b-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-semibold ltr:block rtl:hidden">RTL</span>
+        </a>
+    </div> -->
+    <!-- LTR & RTL Mode Code -->
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top"
+        className="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 end-5 size-9 text-center bg-emerald-600 text-white justify-center items-center"><i
+            className="uil uil-arrow-up"></i></a>
+    <!-- Back to top -->
+
+    <!-- JAVASCRIPTS -->
+    <script src="assets/libs/tobii/js/tobii.min.js"></script>
+    <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <script src="@/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPTS -->
+</body>
+
+</div>
